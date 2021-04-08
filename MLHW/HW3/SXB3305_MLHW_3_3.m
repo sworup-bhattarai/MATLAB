@@ -10,7 +10,9 @@ Vicle Speed (v)eh [mph] Reaction (dr) Braking (db)
 50                              15          38
 60                              18          55
 70                              21          75
-
+The reaction distance (dr) is the distance traveled after the pedestrian is observed but before
+the driver presses the brake. The brake distance (db) is the distance traveled during the
+deceleration of the vehicle.
 
 
 %}
@@ -19,9 +21,9 @@ v = [20,30,40,50,60,70];
 d1 = [6,9,12,15,18,21];
 d2 = [6,14,24,38,55,75];
 
-plot(v,d1,'s','linewidth', 3 , "MarkerSize", 6)
+plot(v,d1,'s','linewidth', 3 , "MarkerSize", 6);
 hold on;
-plot(v,d2,'s','linewidth', 3 , "MarkerSize", 6)
-legend("Reaction (dr)", "Braking (db)", "Location", "Best")
-xlabel("Vehicle Speed (v) [mph]")
-ylabel("Distance Traveled ")
+plot(v,d2,'s','linewidth', 3 , "MarkerSize", 6);
+legend("Reaction (dr)", "Braking (db)", "Location", "Best");
+xlabel("Vehicle Speed (v) [mph]");
+ylabel("Distance Traveled ");
