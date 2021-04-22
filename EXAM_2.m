@@ -33,7 +33,7 @@ CData=[5 10 15 20 25 30; 7 15 22 29 36 44];
 plot(Box_num, Cost_per, 'dk', 'markerFaceColor' , 'k','MarkerSize', 15 );
 
 
-axis([0 (Box_num(end)+5) 0 round(Cost_per(end), -1)])
+axis([0 (Box_num(end)+5) 0 round(Cost_per(end), -1)+10])
 grid on;
 xlabel('Number of Boxes (N) [#]' ,'FontWeight' , 'bold', 'FontSize', 18 );
 ylabel('Total Cost (C) [$]', 'FontWeight' , 'bold','FontSize', 18);
