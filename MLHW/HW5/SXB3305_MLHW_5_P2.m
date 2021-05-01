@@ -29,7 +29,7 @@ H = input("Enter the altitude in meters: ");
 
 
 if(H < 11000)
-    T = 15.04 - 0.00649;
+    T = 15.04 - 0.00649 * H;
     P = 101.29 *((T + 273.1)/288.08)^(5.256);
     L = 'Trophosphere';
 elseif(H >= 11000 && H < 25000)
